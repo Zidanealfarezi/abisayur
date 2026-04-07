@@ -105,21 +105,29 @@
                                     Kategori
                                 </h3>
 <div class="flex flex-col gap-2">
-<button onclick="filterCategory('semua')" class="filter-btn flex items-center justify-between px-4 py-3 bg-primary text-white rounded-xl font-bold transition-all">
+<button class="flex items-center justify-between px-4 py-3 bg-primary text-white rounded-xl font-bold transition-all">
                                         Semua Produk
-                                        <span class="text-xs bg-white/20 px-2 py-1 rounded-md">45</span>
+                                        <span class="text-xs bg-white/20 px-2 py-1 rounded-md">124</span>
 </button>
-<button onclick="filterCategory('sayuran')" class="filter-btn flex items-center justify-between px-4 py-3 hover:bg-white dark:hover:bg-[#1a301a] rounded-xl font-semibold text-[#4c9a4c] dark:text-[#8ac58a] transition-all">
-  <span class="flex items-center gap-2"><span class="material-symbols-outlined text-sm">eco</span> Sayuran</span>
-  <span class="text-xs opacity-50">15</span>
+<button class="flex items-center justify-between px-4 py-3 hover:bg-white dark:hover:bg-[#1a301a] rounded-xl font-semibold text-[#4c9a4c] dark:text-[#8ac58a] transition-all">
+                                        Microgreens
+                                        <span class="text-xs opacity-50">12</span>
 </button>
-<button onclick="filterCategory('buah')" class="filter-btn flex items-center justify-between px-4 py-3 hover:bg-white dark:hover:bg-[#1a301a] rounded-xl font-semibold text-[#4c9a4c] dark:text-[#8ac58a] transition-all">
-  <span class="flex items-center gap-2"><span class="material-symbols-outlined text-sm">nutrition</span> Buah</span>
-  <span class="text-xs opacity-50">15</span>
+<button class="flex items-center justify-between px-4 py-3 hover:bg-white dark:hover:bg-[#1a301a] rounded-xl font-semibold text-[#4c9a4c] dark:text-[#8ac58a] transition-all">
+                                        Heirloom Vegetables
+                                        <span class="text-xs opacity-50">18</span>
 </button>
-<button onclick="filterCategory('umbi')" class="filter-btn flex items-center justify-between px-4 py-3 hover:bg-white dark:hover:bg-[#1a301a] rounded-xl font-semibold text-[#4c9a4c] dark:text-[#8ac58a] transition-all">
-  <span class="flex items-center gap-2"><span class="material-symbols-outlined text-sm">potted_plant</span> Umbi-umbian</span>
-  <span class="text-xs opacity-50">15</span>
+<button class="flex items-center justify-between px-4 py-3 hover:bg-white dark:hover:bg-[#1a301a] rounded-xl font-semibold text-[#4c9a4c] dark:text-[#8ac58a] transition-all">
+                                        Leafy Greens
+                                        <span class="text-xs opacity-50">42</span>
+</button>
+<button class="flex items-center justify-between px-4 py-3 hover:bg-white dark:hover:bg-[#1a301a] rounded-xl font-semibold text-[#4c9a4c] dark:text-[#8ac58a] transition-all">
+                                        Roots &amp; Tubers
+                                        <span class="text-xs opacity-50">26</span>
+</button>
+<button class="flex items-center justify-between px-4 py-3 hover:bg-white dark:hover:bg-[#1a301a] rounded-xl font-semibold text-[#4c9a4c] dark:text-[#8ac58a] transition-all">
+                                        Exotic Herbs
+                                        <span class="text-xs opacity-50">15</span>
 </button>
 </div>
 </div>
@@ -144,7 +152,7 @@
 </aside>
 <div class="grow">
 <div class="flex justify-between items-center mb-8 pb-4 border-b border-[#e7f3e7] dark:border-[#1a301a]">
-<p class="text-sm font-bold text-[#4c9a4c]">Menampilkan <span id="product-count" class="text-primary font-black">9</span> produk</p>
+<p class="text-sm font-bold text-[#4c9a4c]">Menampilkan <span class="text-primary font-black">24</span> dari 124 produk</p>
 <div class="flex items-center gap-2">
 <span class="text-sm font-bold text-gray-400">Urutkan:</span>
 <select class="bg-transparent border-none text-sm font-bold text-[#0d1b0d] dark:text-white focus:ring-0 cursor-pointer">
@@ -154,370 +162,8 @@
 </select>
 </div>
 </div>
-<div id="product-grid" class="space-y-12">
-
-<!-- ===== KATEGORI: SAYURAN ===== -->
-<div class="product-section" data-category="sayuran">
-  <div class="flex items-center gap-3 mb-6">
-    <div class="bg-primary/10 text-primary p-2 rounded-xl"><span class="material-symbols-outlined">eco</span></div>
-    <h2 class="text-2xl font-extrabold text-[#0d1b0d] dark:text-white">🥬 Sayuran</h2>
-    <div class="flex-1 h-px bg-[#e7f3e7] dark:bg-[#1a301a]"></div>
-  </div>
-  <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6">
-
-    <!-- Kangkung -->
-    <div class="product-card bg-white dark:bg-background-dark rounded-3xl overflow-hidden border border-[#e7f3e7] dark:border-[#1a301a] shadow-sm hover:shadow-2xl hover:border-primary/20 transition-all group">
-      <div class="h-52 relative overflow-hidden">
-        <img alt="Kangkung" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://images.unsplash.com/photo-1576045057995-568f588f82fb?w=400&q=80"/>
-        <div class="absolute top-3 left-3 bg-primary text-white text-[10px] font-black uppercase tracking-widest px-3 py-1 rounded-full shadow-lg">Grade A</div>
-        <div class="absolute top-3 right-3 bg-white/90 backdrop-blur-md p-1.5 rounded-xl text-primary"><span class="material-symbols-outlined text-base">eco</span></div>
-      </div>
-      <div class="p-5">
-        <h3 class="text-lg font-bold group-hover:text-primary transition-colors mb-1">Kangkung</h3>
-        <p class="text-xs text-[#4c9a4c] mb-4 line-clamp-2">Kangkung segar organik, cocok ditumis dengan bumbu bawang putih dan cabai.</p>
-        <div class="grid grid-cols-2 gap-3 pt-4 border-t border-dashed border-[#e7f3e7] dark:border-[#1a301a] text-[10px]">
-          <div><span class="font-bold text-gray-400 uppercase tracking-widest block">Min. Order</span><span class="font-bold">1 Ikat</span></div>
-          <div><span class="font-bold text-gray-400 uppercase tracking-widest block">Shelf Life</span><span class="font-bold">2-3 Hari</span></div>
-          <div><span class="font-bold text-gray-400 uppercase tracking-widest block">Status</span><span class="font-bold flex items-center gap-1"><span class="w-1.5 h-1.5 bg-green-500 rounded-full"></span>Organik</span></div>
-          <div><span class="font-bold text-gray-400 uppercase tracking-widest block">Packaging</span><span class="font-bold">Ikat Segar</span></div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Bayam -->
-    <div class="product-card bg-white dark:bg-background-dark rounded-3xl overflow-hidden border border-[#e7f3e7] dark:border-[#1a301a] shadow-sm hover:shadow-2xl hover:border-primary/20 transition-all group">
-      <div class="h-52 relative overflow-hidden">
-        <img alt="Bayam Hijau" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://images.unsplash.com/photo-1598170845058-32b9d6a5da37?w=400&q=80"/>
-        <div class="absolute top-3 left-3 bg-primary text-white text-[10px] font-black uppercase tracking-widest px-3 py-1 rounded-full shadow-lg">Grade A</div>
-      </div>
-      <div class="p-5">
-        <h3 class="text-lg font-bold group-hover:text-primary transition-colors mb-1">Bayam Hijau</h3>
-        <p class="text-xs text-[#4c9a4c] mb-4 line-clamp-2">Bayam muda segar kaya zat besi, cocok untuk sup, tumisan, dan jus hijau.</p>
-        <div class="grid grid-cols-2 gap-3 pt-4 border-t border-dashed border-[#e7f3e7] dark:border-[#1a301a] text-[10px]">
-          <div><span class="font-bold text-gray-400 uppercase tracking-widest block">Min. Order</span><span class="font-bold">500 gram</span></div>
-          <div><span class="font-bold text-gray-400 uppercase tracking-widest block">Shelf Life</span><span class="font-bold">3-4 Hari</span></div>
-          <div><span class="font-bold text-gray-400 uppercase tracking-widest block">Status</span><span class="font-bold flex items-center gap-1"><span class="w-1.5 h-1.5 bg-green-500 rounded-full"></span>Organik</span></div>
-          <div><span class="font-bold text-gray-400 uppercase tracking-widest block">Packaging</span><span class="font-bold">Kantong 500g</span></div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Sawi Hijau -->
-    <div class="product-card bg-white dark:bg-background-dark rounded-3xl overflow-hidden border border-[#e7f3e7] dark:border-[#1a301a] shadow-sm hover:shadow-2xl hover:border-primary/20 transition-all group">
-      <div class="h-52 relative overflow-hidden">
-        <img alt="Sawi Hijau" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://images.unsplash.com/photo-1622206151226-18ca2c9ab4a1?w=400&q=80"/>
-        <div class="absolute top-3 left-3 bg-primary text-white text-[10px] font-black uppercase tracking-widest px-3 py-1 rounded-full shadow-lg">Grade A</div>
-      </div>
-      <div class="p-5">
-        <h3 class="text-lg font-bold group-hover:text-primary transition-colors mb-1">Sawi Hijau</h3>
-        <p class="text-xs text-[#4c9a4c] mb-4 line-clamp-2">Sawi hijau segar pilihan, cocok untuk mie ayam, bakso, dan tumisan.</p>
-        <div class="grid grid-cols-2 gap-3 pt-4 border-t border-dashed border-[#e7f3e7] dark:border-[#1a301a] text-[10px]">
-          <div><span class="font-bold text-gray-400 uppercase tracking-widest block">Min. Order</span><span class="font-bold">1 kg</span></div>
-          <div><span class="font-bold text-gray-400 uppercase tracking-widest block">Shelf Life</span><span class="font-bold">3-5 Hari</span></div>
-          <div><span class="font-bold text-gray-400 uppercase tracking-widest block">Status</span><span class="font-bold flex items-center gap-1"><span class="w-1.5 h-1.5 bg-green-500 rounded-full"></span>Greenhouse</span></div>
-          <div><span class="font-bold text-gray-400 uppercase tracking-widest block">Packaging</span><span class="font-bold">Ikat 1kg</span></div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Brokoli -->
-    <div class="product-card bg-white dark:bg-background-dark rounded-3xl overflow-hidden border border-[#e7f3e7] dark:border-[#1a301a] shadow-sm hover:shadow-2xl hover:border-primary/20 transition-all group">
-      <div class="h-52 relative overflow-hidden">
-        <img alt="Brokoli" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://images.unsplash.com/photo-1459411621453-7b03977f4bfc?w=400&q=80"/>
-        <div class="absolute top-3 left-3 bg-primary text-white text-[10px] font-black uppercase tracking-widest px-3 py-1 rounded-full shadow-lg">Grade A</div>
-      </div>
-      <div class="p-5">
-        <h3 class="text-lg font-bold group-hover:text-primary transition-colors mb-1">Brokoli</h3>
-        <p class="text-xs text-[#4c9a4c] mb-4 line-clamp-2">Brokoli segar kaya vitamin C dan serat, populer di restoran dan hotel bintang.</p>
-        <div class="grid grid-cols-2 gap-3 pt-4 border-t border-dashed border-[#e7f3e7] dark:border-[#1a301a] text-[10px]">
-          <div><span class="font-bold text-gray-400 uppercase tracking-widest block">Min. Order</span><span class="font-bold">1 kg</span></div>
-          <div><span class="font-bold text-gray-400 uppercase tracking-widest block">Shelf Life</span><span class="font-bold">5-7 Hari</span></div>
-          <div><span class="font-bold text-gray-400 uppercase tracking-widest block">Status</span><span class="font-bold flex items-center gap-1"><span class="w-1.5 h-1.5 bg-green-500 rounded-full"></span>Greenhouse</span></div>
-          <div><span class="font-bold text-gray-400 uppercase tracking-widest block">Packaging</span><span class="font-bold">Box 1kg</span></div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Terong Ungu -->
-    <div class="product-card bg-white dark:bg-background-dark rounded-3xl overflow-hidden border border-[#e7f3e7] dark:border-[#1a301a] shadow-sm hover:shadow-2xl hover:border-primary/20 transition-all group">
-      <div class="h-52 relative overflow-hidden">
-        <img alt="Terong Ungu" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://images.unsplash.com/photo-1634467524884-897d0af5e104?w=400&q=80"/>
-        <div class="absolute top-3 left-3 bg-primary text-white text-[10px] font-black uppercase tracking-widest px-3 py-1 rounded-full shadow-lg">Grade A</div>
-      </div>
-      <div class="p-5">
-        <h3 class="text-lg font-bold group-hover:text-primary transition-colors mb-1">Terong Ungu</h3>
-        <p class="text-xs text-[#4c9a4c] mb-4 line-clamp-2">Terong ungu segar ideal untuk balado, tumisan, dan masakan bakar ala restoran.</p>
-        <div class="grid grid-cols-2 gap-3 pt-4 border-t border-dashed border-[#e7f3e7] dark:border-[#1a301a] text-[10px]">
-          <div><span class="font-bold text-gray-400 uppercase tracking-widest block">Min. Order</span><span class="font-bold">2 kg</span></div>
-          <div><span class="font-bold text-gray-400 uppercase tracking-widest block">Shelf Life</span><span class="font-bold">4-6 Hari</span></div>
-          <div><span class="font-bold text-gray-400 uppercase tracking-widest block">Status</span><span class="font-bold flex items-center gap-1"><span class="w-1.5 h-1.5 bg-green-500 rounded-full"></span>Organik</span></div>
-          <div><span class="font-bold text-gray-400 uppercase tracking-widest block">Packaging</span><span class="font-bold">Karton 2kg</span></div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Kacang Panjang -->
-    <div class="product-card bg-white dark:bg-background-dark rounded-3xl overflow-hidden border border-[#e7f3e7] dark:border-[#1a301a] shadow-sm hover:shadow-2xl hover:border-primary/20 transition-all group">
-      <div class="h-52 relative overflow-hidden">
-        <img alt="Kacang Panjang" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://images.unsplash.com/photo-1567375698348-5d9d5ae99de0?w=400&q=80"/>
-        <div class="absolute top-3 left-3 bg-primary text-white text-[10px] font-black uppercase tracking-widest px-3 py-1 rounded-full shadow-lg">Grade A</div>
-      </div>
-      <div class="p-5">
-        <h3 class="text-lg font-bold group-hover:text-primary transition-colors mb-1">Kacang Panjang</h3>
-        <p class="text-xs text-[#4c9a4c] mb-4 line-clamp-2">Kacang panjang segar untuk sayur asem, pecel, dan tumisan sehari-hari.</p>
-        <div class="grid grid-cols-2 gap-3 pt-4 border-t border-dashed border-[#e7f3e7] dark:border-[#1a301a] text-[10px]">
-          <div><span class="font-bold text-gray-400 uppercase tracking-widest block">Min. Order</span><span class="font-bold">1 kg</span></div>
-          <div><span class="font-bold text-gray-400 uppercase tracking-widest block">Shelf Life</span><span class="font-bold">3-4 Hari</span></div>
-          <div><span class="font-bold text-gray-400 uppercase tracking-widest block">Status</span><span class="font-bold flex items-center gap-1"><span class="w-1.5 h-1.5 bg-green-500 rounded-full"></span>Lokal Segar</span></div>
-          <div><span class="font-bold text-gray-400 uppercase tracking-widest block">Packaging</span><span class="font-bold">Ikat 1kg</span></div>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</div>
-
-<!-- ===== KATEGORI: BUAH ===== -->
-<div class="product-section" data-category="buah">
-  <div class="flex items-center gap-3 mb-6">
-    <div class="bg-orange-100 text-orange-500 p-2 rounded-xl"><span class="material-symbols-outlined">nutrition</span></div>
-    <h2 class="text-2xl font-extrabold text-[#0d1b0d] dark:text-white">🍉 Buah</h2>
-    <div class="flex-1 h-px bg-[#e7f3e7] dark:bg-[#1a301a]"></div>
-  </div>
-  <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6">
-
-    <!-- Pisang -->
-    <div class="product-card bg-white dark:bg-background-dark rounded-3xl overflow-hidden border border-[#e7f3e7] dark:border-[#1a301a] shadow-sm hover:shadow-2xl hover:border-orange-200 transition-all group">
-      <div class="h-52 relative overflow-hidden">
-        <img alt="Pisang Cavendish" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e?w=400&q=80"/>
-        <div class="absolute top-3 left-3 bg-orange-400 text-white text-[10px] font-black uppercase tracking-widest px-3 py-1 rounded-full shadow-lg">Grade A</div>
-      </div>
-      <div class="p-5">
-        <h3 class="text-lg font-bold group-hover:text-orange-400 transition-colors mb-1">Pisang Cavendish</h3>
-        <p class="text-xs text-[#4c9a4c] mb-4 line-clamp-2">Pisang manis premium pilihan hotel dan restoran, tekstur lembut dan tahan lama.</p>
-        <div class="grid grid-cols-2 gap-3 pt-4 border-t border-dashed border-[#e7f3e7] dark:border-[#1a301a] text-[10px]">
-          <div><span class="font-bold text-gray-400 uppercase tracking-widest block">Min. Order</span><span class="font-bold">5 kg</span></div>
-          <div><span class="font-bold text-gray-400 uppercase tracking-widest block">Shelf Life</span><span class="font-bold">5-7 Hari</span></div>
-          <div><span class="font-bold text-gray-400 uppercase tracking-widest block">Status</span><span class="font-bold flex items-center gap-1"><span class="w-1.5 h-1.5 bg-yellow-400 rounded-full"></span>Lokal Premium</span></div>
-          <div><span class="font-bold text-gray-400 uppercase tracking-widest block">Packaging</span><span class="font-bold">Karton 5kg</span></div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Mangga -->
-    <div class="product-card bg-white dark:bg-background-dark rounded-3xl overflow-hidden border border-[#e7f3e7] dark:border-[#1a301a] shadow-sm hover:shadow-2xl hover:border-orange-200 transition-all group">
-      <div class="h-52 relative overflow-hidden">
-        <img alt="Mangga Harum Manis" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://images.unsplash.com/photo-1601493700631-2b16ec4b4716?w=400&q=80"/>
-        <div class="absolute top-3 left-3 bg-orange-400 text-white text-[10px] font-black uppercase tracking-widest px-3 py-1 rounded-full shadow-lg">Grade A</div>
-      </div>
-      <div class="p-5">
-        <h3 class="text-lg font-bold group-hover:text-orange-400 transition-colors mb-1">Mangga Harum Manis</h3>
-        <p class="text-xs text-[#4c9a4c] mb-4 line-clamp-2">Raja buah tropis Indonesia, manis dan harum, cocok untuk dessert dan jus premium.</p>
-        <div class="grid grid-cols-2 gap-3 pt-4 border-t border-dashed border-[#e7f3e7] dark:border-[#1a301a] text-[10px]">
-          <div><span class="font-bold text-gray-400 uppercase tracking-widest block">Min. Order</span><span class="font-bold">5 kg</span></div>
-          <div><span class="font-bold text-gray-400 uppercase tracking-widest block">Shelf Life</span><span class="font-bold">4-6 Hari</span></div>
-          <div><span class="font-bold text-gray-400 uppercase tracking-widest block">Status</span><span class="font-bold flex items-center gap-1"><span class="w-1.5 h-1.5 bg-yellow-400 rounded-full"></span>Lokal Premium</span></div>
-          <div><span class="font-bold text-gray-400 uppercase tracking-widest block">Packaging</span><span class="font-bold">Karton 5kg</span></div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Semangka -->
-    <div class="product-card bg-white dark:bg-background-dark rounded-3xl overflow-hidden border border-[#e7f3e7] dark:border-[#1a301a] shadow-sm hover:shadow-2xl hover:border-orange-200 transition-all group">
-      <div class="h-52 relative overflow-hidden">
-        <img alt="Semangka Non Biji" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://images.unsplash.com/photo-1563114773-84221bd62daa?w=400&q=80"/>
-        <div class="absolute top-3 left-3 bg-orange-400 text-white text-[10px] font-black uppercase tracking-widest px-3 py-1 rounded-full shadow-lg">Grade A</div>
-      </div>
-      <div class="p-5">
-        <h3 class="text-lg font-bold group-hover:text-orange-400 transition-colors mb-1">Semangka Non Biji</h3>
-        <p class="text-xs text-[#4c9a4c] mb-4 line-clamp-2">Semangka manis tanpa biji premium untuk hotel buffet dan restoran fine dining.</p>
-        <div class="grid grid-cols-2 gap-3 pt-4 border-t border-dashed border-[#e7f3e7] dark:border-[#1a301a] text-[10px]">
-          <div><span class="font-bold text-gray-400 uppercase tracking-widest block">Min. Order</span><span class="font-bold">10 kg</span></div>
-          <div><span class="font-bold text-gray-400 uppercase tracking-widest block">Shelf Life</span><span class="font-bold">7-10 Hari</span></div>
-          <div><span class="font-bold text-gray-400 uppercase tracking-widest block">Status</span><span class="font-bold flex items-center gap-1"><span class="w-1.5 h-1.5 bg-yellow-400 rounded-full"></span>Lokal Premium</span></div>
-          <div><span class="font-bold text-gray-400 uppercase tracking-widest block">Packaging</span><span class="font-bold">Per Buah</span></div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Alpukat -->
-    <div class="product-card bg-white dark:bg-background-dark rounded-3xl overflow-hidden border border-[#e7f3e7] dark:border-[#1a301a] shadow-sm hover:shadow-2xl hover:border-orange-200 transition-all group">
-      <div class="h-52 relative overflow-hidden">
-        <img alt="Alpukat" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://images.unsplash.com/photo-1519162808019-7de1a3c45dc5?w=400&q=80"/>
-        <div class="absolute top-3 left-3 bg-orange-400 text-white text-[10px] font-black uppercase tracking-widest px-3 py-1 rounded-full shadow-lg">Grade A</div>
-      </div>
-      <div class="p-5">
-        <h3 class="text-lg font-bold group-hover:text-orange-400 transition-colors mb-1">Alpukat Mentega</h3>
-        <p class="text-xs text-[#4c9a4c] mb-4 line-clamp-2">Alpukat krim lokal berkualitas tinggi, favorit untuk jus, salad, dan guacamole.</p>
-        <div class="grid grid-cols-2 gap-3 pt-4 border-t border-dashed border-[#e7f3e7] dark:border-[#1a301a] text-[10px]">
-          <div><span class="font-bold text-gray-400 uppercase tracking-widest block">Min. Order</span><span class="font-bold">3 kg</span></div>
-          <div><span class="font-bold text-gray-400 uppercase tracking-widest block">Shelf Life</span><span class="font-bold">3-5 Hari</span></div>
-          <div><span class="font-bold text-gray-400 uppercase tracking-widest block">Status</span><span class="font-bold flex items-center gap-1"><span class="w-1.5 h-1.5 bg-yellow-400 rounded-full"></span>Lokal Segar</span></div>
-          <div><span class="font-bold text-gray-400 uppercase tracking-widest block">Packaging</span><span class="font-bold">Karton 3kg</span></div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Pepaya -->
-    <div class="product-card bg-white dark:bg-background-dark rounded-3xl overflow-hidden border border-[#e7f3e7] dark:border-[#1a301a] shadow-sm hover:shadow-2xl hover:border-orange-200 transition-all group">
-      <div class="h-52 relative overflow-hidden">
-        <img alt="Pepaya California" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://images.unsplash.com/photo-1617820668872-71d2f9b9b81d?w=400&q=80"/>
-        <div class="absolute top-3 left-3 bg-orange-400 text-white text-[10px] font-black uppercase tracking-widest px-3 py-1 rounded-full shadow-lg">Grade A</div>
-      </div>
-      <div class="p-5">
-        <h3 class="text-lg font-bold group-hover:text-orange-400 transition-colors mb-1">Pepaya California</h3>
-        <p class="text-xs text-[#4c9a4c] mb-4 line-clamp-2">Pepaya manis lokal berkualitas premium, cocok untuk breakfast menu dan dessert.</p>
-        <div class="grid grid-cols-2 gap-3 pt-4 border-t border-dashed border-[#e7f3e7] dark:border-[#1a301a] text-[10px]">
-          <div><span class="font-bold text-gray-400 uppercase tracking-widest block">Min. Order</span><span class="font-bold">5 kg</span></div>
-          <div><span class="font-bold text-gray-400 uppercase tracking-widest block">Shelf Life</span><span class="font-bold">4-6 Hari</span></div>
-          <div><span class="font-bold text-gray-400 uppercase tracking-widest block">Status</span><span class="font-bold flex items-center gap-1"><span class="w-1.5 h-1.5 bg-yellow-400 rounded-full"></span>Lokal Premium</span></div>
-          <div><span class="font-bold text-gray-400 uppercase tracking-widest block">Packaging</span><span class="font-bold">Per Buah</span></div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Nanas -->
-    <div class="product-card bg-white dark:bg-background-dark rounded-3xl overflow-hidden border border-[#e7f3e7] dark:border-[#1a301a] shadow-sm hover:shadow-2xl hover:border-orange-200 transition-all group">
-      <div class="h-52 relative overflow-hidden">
-        <img alt="Nanas" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://images.unsplash.com/photo-1550258987-190a2d41a8ba?w=400&q=80"/>
-        <div class="absolute top-3 left-3 bg-orange-400 text-white text-[10px] font-black uppercase tracking-widest px-3 py-1 rounded-full shadow-lg">Grade A</div>
-      </div>
-      <div class="p-5">
-        <h3 class="text-lg font-bold group-hover:text-orange-400 transition-colors mb-1">Nanas Madu</h3>
-        <p class="text-xs text-[#4c9a4c] mb-4 line-clamp-2">Nanas asam manis tropis untuk jus segar, asinan, dan pelengkap masakan.</p>
-        <div class="grid grid-cols-2 gap-3 pt-4 border-t border-dashed border-[#e7f3e7] dark:border-[#1a301a] text-[10px]">
-          <div><span class="font-bold text-gray-400 uppercase tracking-widest block">Min. Order</span><span class="font-bold">5 kg</span></div>
-          <div><span class="font-bold text-gray-400 uppercase tracking-widest block">Shelf Life</span><span class="font-bold">5-7 Hari</span></div>
-          <div><span class="font-bold text-gray-400 uppercase tracking-widest block">Status</span><span class="font-bold flex items-center gap-1"><span class="w-1.5 h-1.5 bg-yellow-400 rounded-full"></span>Lokal Segar</span></div>
-          <div><span class="font-bold text-gray-400 uppercase tracking-widest block">Packaging</span><span class="font-bold">Per Buah</span></div>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</div>
-
-<!-- ===== KATEGORI: UMBI-UMBIAN ===== -->
-<div class="product-section" data-category="umbi">
-  <div class="flex items-center gap-3 mb-6">
-    <div class="bg-amber-100 text-amber-600 p-2 rounded-xl"><span class="material-symbols-outlined">potted_plant</span></div>
-    <h2 class="text-2xl font-extrabold text-[#0d1b0d] dark:text-white">🥔 Umbi-umbian</h2>
-    <div class="flex-1 h-px bg-[#e7f3e7] dark:bg-[#1a301a]"></div>
-  </div>
-  <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6">
-
-    <!-- Kentang -->
-    <div class="product-card bg-white dark:bg-background-dark rounded-3xl overflow-hidden border border-[#e7f3e7] dark:border-[#1a301a] shadow-sm hover:shadow-2xl hover:border-amber-200 transition-all group">
-      <div class="h-52 relative overflow-hidden">
-        <img alt="Kentang" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://images.unsplash.com/photo-1518977676601-b53f82aba655?w=400&q=80"/>
-        <div class="absolute top-3 left-3 bg-amber-500 text-white text-[10px] font-black uppercase tracking-widest px-3 py-1 rounded-full shadow-lg">Grade A</div>
-      </div>
-      <div class="p-5">
-        <h3 class="text-lg font-bold group-hover:text-amber-500 transition-colors mb-1">Kentang Granola</h3>
-        <p class="text-xs text-[#4c9a4c] mb-4 line-clamp-2">Kentang lokal berkualitas tinggi, cocok untuk masakan hotel dan restoran fine dining.</p>
-        <div class="grid grid-cols-2 gap-3 pt-4 border-t border-dashed border-[#e7f3e7] dark:border-[#1a301a] text-[10px]">
-          <div><span class="font-bold text-gray-400 uppercase tracking-widest block">Min. Order</span><span class="font-bold">5 kg</span></div>
-          <div><span class="font-bold text-gray-400 uppercase tracking-widest block">Shelf Life</span><span class="font-bold">14-21 Hari</span></div>
-          <div><span class="font-bold text-gray-400 uppercase tracking-widest block">Status</span><span class="font-bold flex items-center gap-1"><span class="w-1.5 h-1.5 bg-amber-400 rounded-full"></span>Lokal Segar</span></div>
-          <div><span class="font-bold text-gray-400 uppercase tracking-widest block">Packaging</span><span class="font-bold">Karung 5kg</span></div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Wortel -->
-    <div class="product-card bg-white dark:bg-background-dark rounded-3xl overflow-hidden border border-[#e7f3e7] dark:border-[#1a301a] shadow-sm hover:shadow-2xl hover:border-amber-200 transition-all group">
-      <div class="h-52 relative overflow-hidden">
-        <img alt="Wortel" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://images.unsplash.com/photo-1447175008436-054170c2e979?w=400&q=80"/>
-        <div class="absolute top-3 left-3 bg-amber-500 text-white text-[10px] font-black uppercase tracking-widest px-3 py-1 rounded-full shadow-lg">Grade A</div>
-      </div>
-      <div class="p-5">
-        <h3 class="text-lg font-bold group-hover:text-amber-500 transition-colors mb-1">Wortel Lokal</h3>
-        <p class="text-xs text-[#4c9a4c] mb-4 line-clamp-2">Wortel oranye segar kaya beta karoten, untuk sup, tumisan, dan juice sehat.</p>
-        <div class="grid grid-cols-2 gap-3 pt-4 border-t border-dashed border-[#e7f3e7] dark:border-[#1a301a] text-[10px]">
-          <div><span class="font-bold text-gray-400 uppercase tracking-widest block">Min. Order</span><span class="font-bold">2 kg</span></div>
-          <div><span class="font-bold text-gray-400 uppercase tracking-widest block">Shelf Life</span><span class="font-bold">10-14 Hari</span></div>
-          <div><span class="font-bold text-gray-400 uppercase tracking-widest block">Status</span><span class="font-bold flex items-center gap-1"><span class="w-1.5 h-1.5 bg-amber-400 rounded-full"></span>Organik</span></div>
-          <div><span class="font-bold text-gray-400 uppercase tracking-widest block">Packaging</span><span class="font-bold">Kantong 2kg</span></div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Jahe -->
-    <div class="product-card bg-white dark:bg-background-dark rounded-3xl overflow-hidden border border-[#e7f3e7] dark:border-[#1a301a] shadow-sm hover:shadow-2xl hover:border-amber-200 transition-all group">
-      <div class="h-52 relative overflow-hidden">
-        <img alt="Jahe" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://images.unsplash.com/photo-1615485500704-8e990f9900f7?w=400&q=80"/>
-        <div class="absolute top-3 left-3 bg-amber-500 text-white text-[10px] font-black uppercase tracking-widest px-3 py-1 rounded-full shadow-lg">Grade A</div>
-      </div>
-      <div class="p-5">
-        <h3 class="text-lg font-bold group-hover:text-amber-500 transition-colors mb-1">Jahe Emprit</h3>
-        <p class="text-xs text-[#4c9a4c] mb-4 line-clamp-2">Rempah jahe segar kualitas premium untuk minuman herbal, masakan, dan marinade.</p>
-        <div class="grid grid-cols-2 gap-3 pt-4 border-t border-dashed border-[#e7f3e7] dark:border-[#1a301a] text-[10px]">
-          <div><span class="font-bold text-gray-400 uppercase tracking-widest block">Min. Order</span><span class="font-bold">1 kg</span></div>
-          <div><span class="font-bold text-gray-400 uppercase tracking-widest block">Shelf Life</span><span class="font-bold">21-30 Hari</span></div>
-          <div><span class="font-bold text-gray-400 uppercase tracking-widest block">Status</span><span class="font-bold flex items-center gap-1"><span class="w-1.5 h-1.5 bg-amber-400 rounded-full"></span>Organik</span></div>
-          <div><span class="font-bold text-gray-400 uppercase tracking-widest block">Packaging</span><span class="font-bold">Kantong 1kg</span></div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Ubi Jalar -->
-    <div class="product-card bg-white dark:bg-background-dark rounded-3xl overflow-hidden border border-[#e7f3e7] dark:border-[#1a301a] shadow-sm hover:shadow-2xl hover:border-amber-200 transition-all group">
-      <div class="h-52 relative overflow-hidden">
-        <img alt="Ubi Jalar Ungu" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://images.unsplash.com/photo-1596097635121-14b63b7a0c19?w=400&q=80"/>
-        <div class="absolute top-3 left-3 bg-amber-500 text-white text-[10px] font-black uppercase tracking-widest px-3 py-1 rounded-full shadow-lg">Grade A</div>
-      </div>
-      <div class="p-5">
-        <h3 class="text-lg font-bold group-hover:text-amber-500 transition-colors mb-1">Ubi Jalar Ungu</h3>
-        <p class="text-xs text-[#4c9a4c] mb-4 line-clamp-2">Ubi ungu premium kaya antioksidan, populer untuk dessert, kue, dan minuman.</p>
-        <div class="grid grid-cols-2 gap-3 pt-4 border-t border-dashed border-[#e7f3e7] dark:border-[#1a301a] text-[10px]">
-          <div><span class="font-bold text-gray-400 uppercase tracking-widest block">Min. Order</span><span class="font-bold">2 kg</span></div>
-          <div><span class="font-bold text-gray-400 uppercase tracking-widest block">Shelf Life</span><span class="font-bold">14-21 Hari</span></div>
-          <div><span class="font-bold text-gray-400 uppercase tracking-widest block">Status</span><span class="font-bold flex items-center gap-1"><span class="w-1.5 h-1.5 bg-amber-400 rounded-full"></span>Lokal Segar</span></div>
-          <div><span class="font-bold text-gray-400 uppercase tracking-widest block">Packaging</span><span class="font-bold">Karung 2kg</span></div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Bawang Merah -->
-    <div class="product-card bg-white dark:bg-background-dark rounded-3xl overflow-hidden border border-[#e7f3e7] dark:border-[#1a301a] shadow-sm hover:shadow-2xl hover:border-amber-200 transition-all group">
-      <div class="h-52 relative overflow-hidden">
-        <img alt="Bawang Merah" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://images.unsplash.com/photo-1518977822534-7049a61ee0c2?w=400&q=80"/>
-        <div class="absolute top-3 left-3 bg-amber-500 text-white text-[10px] font-black uppercase tracking-widest px-3 py-1 rounded-full shadow-lg">Grade A</div>
-      </div>
-      <div class="p-5">
-        <h3 class="text-lg font-bold group-hover:text-amber-500 transition-colors mb-1">Bawang Merah</h3>
-        <p class="text-xs text-[#4c9a4c] mb-4 line-clamp-2">Bumbu dasar wajib masakan Indonesia, kualitas premium dari petani Brebes pilihan.</p>
-        <div class="grid grid-cols-2 gap-3 pt-4 border-t border-dashed border-[#e7f3e7] dark:border-[#1a301a] text-[10px]">
-          <div><span class="font-bold text-gray-400 uppercase tracking-widest block">Min. Order</span><span class="font-bold">2 kg</span></div>
-          <div><span class="font-bold text-gray-400 uppercase tracking-widest block">Shelf Life</span><span class="font-bold">21-30 Hari</span></div>
-          <div><span class="font-bold text-gray-400 uppercase tracking-widest block">Status</span><span class="font-bold flex items-center gap-1"><span class="w-1.5 h-1.5 bg-amber-400 rounded-full"></span>Lokal Premium</span></div>
-          <div><span class="font-bold text-gray-400 uppercase tracking-widest block">Packaging</span><span class="font-bold">Jaring 2kg</span></div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Kunyit -->
-    <div class="product-card bg-white dark:bg-background-dark rounded-3xl overflow-hidden border border-[#e7f3e7] dark:border-[#1a301a] shadow-sm hover:shadow-2xl hover:border-amber-200 transition-all group">
-      <div class="h-52 relative overflow-hidden">
-        <img alt="Kunyit" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://images.unsplash.com/photo-1615485291234-9d694218aeb2?w=400&q=80"/>
-        <div class="absolute top-3 left-3 bg-amber-500 text-white text-[10px] font-black uppercase tracking-widest px-3 py-1 rounded-full shadow-lg">Grade A</div>
-      </div>
-      <div class="p-5">
-        <h3 class="text-lg font-bold group-hover:text-amber-500 transition-colors mb-1">Kunyit Segar</h3>
-        <p class="text-xs text-[#4c9a4c] mb-4 line-clamp-2">Rempah kunyit segar untuk jamu, kari, dan pewarna alami masakan tradisional.</p>
-        <div class="grid grid-cols-2 gap-3 pt-4 border-t border-dashed border-[#e7f3e7] dark:border-[#1a301a] text-[10px]">
-          <div><span class="font-bold text-gray-400 uppercase tracking-widest block">Min. Order</span><span class="font-bold">500 gram</span></div>
-          <div><span class="font-bold text-gray-400 uppercase tracking-widest block">Shelf Life</span><span class="font-bold">14-21 Hari</span></div>
-          <div><span class="font-bold text-gray-400 uppercase tracking-widest block">Status</span><span class="font-bold flex items-center gap-1"><span class="w-1.5 h-1.5 bg-amber-400 rounded-full"></span>Organik</span></div>
-          <div><span class="font-bold text-gray-400 uppercase tracking-widest block">Packaging</span><span class="font-bold">Kantong 500g</span></div>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</div>
-
-</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-8">
+<div class="bg-white dark:bg-background-dark rounded-3xl overflow-hidden border border-[#e7f3e7] dark:border-[#1a301a] shadow-sm hover:shadow-2xl hover:border-primary/20 transition-all group">
 <div class="h-64 relative overflow-hidden">
 <img alt="Microgreens Mix" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCN6x9GifMg53oEuKNGXOyDcRkQZhd_OMcMfKXoQv-UHtZ_LCBtJVW-k7kKm13K1JySl6u-WpK3d6iXqyvfZep_S8cBPuKqTEsor6vlvJfDU-RbId-Z99pB8DuSQJy_7-h_XXsrWR8NuvpqPcIBpVOUBC5Y-WNv_8Wb5Baz641FTT832uNdslVbkcNcKcCWTeeSyIDRaRxApydtm3ZIqHi_OizQteKwvywgzwIv7zpvkV1Hfb61P4hL6WqwRdP9WzibJwNtx4N7tWr2"/>
 <div class="absolute top-4 left-4 bg-primary text-white text-[10px] font-black uppercase tracking-widest px-3 py-1.5 rounded-full shadow-lg">Grade A</div>
@@ -762,29 +408,4 @@
 </footer>
 </div>
 
-<script>
-function filterCategory(cat) {
-  const sections = document.querySelectorAll('.product-section');
-  const buttons = document.querySelectorAll('.filter-btn');
-  const countEl = document.getElementById('product-count');
-  
-  buttons.forEach(btn => {
-    btn.classList.remove('bg-primary', 'text-white');
-    btn.classList.add('text-[#4c9a4c]');
-  });
-  event.currentTarget.classList.add('bg-primary', 'text-white');
-  event.currentTarget.classList.remove('text-[#4c9a4c]');
-
-  let count = 0;
-  sections.forEach(section => {
-    if (cat === 'semua' || section.dataset.category === cat) {
-      section.style.display = 'block';
-      count += section.querySelectorAll('.product-card').length;
-    } else {
-      section.style.display = 'none';
-    }
-  });
-  countEl.textContent = count;
-}
-</script>
 </body></html>
