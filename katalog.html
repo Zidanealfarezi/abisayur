@@ -105,29 +105,21 @@
                                     Kategori
                                 </h3>
 <div class="flex flex-col gap-2">
-<button class="flex items-center justify-between px-4 py-3 bg-primary text-white rounded-xl font-bold transition-all">
+<button data-filter="Semua" class="flex items-center justify-between px-4 py-3 bg-primary text-white rounded-xl font-bold transition-all">
                                         Semua Produk
-                                        <span class="text-xs bg-white/20 px-2 py-1 rounded-md">124</span>
+                                        <span class="text-xs bg-white/20 px-2 py-1 rounded-md">27</span>
 </button>
-<button class="flex items-center justify-between px-4 py-3 hover:bg-white dark:hover:bg-[#1a301a] rounded-xl font-semibold text-[#4c9a4c] dark:text-[#8ac58a] transition-all">
-                                        Microgreens
-                                        <span class="text-xs opacity-50">12</span>
+<button data-filter="Sayur" class="flex items-center justify-between px-4 py-3 hover:bg-white dark:hover:bg-[#1a301a] rounded-xl font-semibold text-[#4c9a4c] dark:text-[#8ac58a] transition-all">
+                                        Sayur
+                                        <span class="text-xs opacity-50">16</span>
 </button>
-<button class="flex items-center justify-between px-4 py-3 hover:bg-white dark:hover:bg-[#1a301a] rounded-xl font-semibold text-[#4c9a4c] dark:text-[#8ac58a] transition-all">
-                                        Heirloom Vegetables
-                                        <span class="text-xs opacity-50">18</span>
+<button data-filter="Buah" class="flex items-center justify-between px-4 py-3 hover:bg-white dark:hover:bg-[#1a301a] rounded-xl font-semibold text-[#4c9a4c] dark:text-[#8ac58a] transition-all">
+                                        Buah
+                                        <span class="text-xs opacity-50">10</span>
 </button>
-<button class="flex items-center justify-between px-4 py-3 hover:bg-white dark:hover:bg-[#1a301a] rounded-xl font-semibold text-[#4c9a4c] dark:text-[#8ac58a] transition-all">
-                                        Leafy Greens
-                                        <span class="text-xs opacity-50">42</span>
-</button>
-<button class="flex items-center justify-between px-4 py-3 hover:bg-white dark:hover:bg-[#1a301a] rounded-xl font-semibold text-[#4c9a4c] dark:text-[#8ac58a] transition-all">
-                                        Roots &amp; Tubers
-                                        <span class="text-xs opacity-50">26</span>
-</button>
-<button class="flex items-center justify-between px-4 py-3 hover:bg-white dark:hover:bg-[#1a301a] rounded-xl font-semibold text-[#4c9a4c] dark:text-[#8ac58a] transition-all">
-                                        Exotic Herbs
-                                        <span class="text-xs opacity-50">15</span>
+<button data-filter="Umbi" class="flex items-center justify-between px-4 py-3 hover:bg-white dark:hover:bg-[#1a301a] rounded-xl font-semibold text-[#4c9a4c] dark:text-[#8ac58a] transition-all">
+                                        Umbi
+                                        <span class="text-xs opacity-50">1</span>
 </button>
 </div>
 </div>
@@ -163,161 +155,549 @@
 </div>
 </div>
 <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-8">
-<div class="bg-white dark:bg-background-dark rounded-3xl overflow-hidden border border-[#e7f3e7] dark:border-[#1a301a] shadow-sm hover:shadow-2xl hover:border-primary/20 transition-all group">
+<div class="bg-white dark:bg-background-dark rounded-3xl overflow-hidden border border-[#e7f3e7] dark:border-[#1a301a] shadow-sm hover:shadow-2xl hover:border-primary/20 transition-all group catalog-item" data-category="Sayur">
 <div class="h-64 relative overflow-hidden">
-<img alt="Microgreens Mix" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCN6x9GifMg53oEuKNGXOyDcRkQZhd_OMcMfKXoQv-UHtZ_LCBtJVW-k7kKm13K1JySl6u-WpK3d6iXqyvfZep_S8cBPuKqTEsor6vlvJfDU-RbId-Z99pB8DuSQJy_7-h_XXsrWR8NuvpqPcIBpVOUBC5Y-WNv_8Wb5Baz641FTT832uNdslVbkcNcKcCWTeeSyIDRaRxApydtm3ZIqHi_OizQteKwvywgzwIv7zpvkV1Hfb61P4hL6WqwRdP9WzibJwNtx4N7tWr2"/>
+<img alt="Kangkung" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="./kangkung.png"/>
 <div class="absolute top-4 left-4 bg-primary text-white text-[10px] font-black uppercase tracking-widest px-3 py-1.5 rounded-full shadow-lg">Grade A</div>
-<div class="absolute top-4 right-4 bg-white/90 dark:bg-black/80 backdrop-blur-md p-1.5 rounded-xl text-primary flex items-center justify-center">
-<span class="material-symbols-outlined text-lg">eco</span>
-</div>
+<div class="absolute top-4 right-4 bg-white/90 dark:bg-black/80 backdrop-blur-md px-3 py-1.5 rounded-xl text-[#0d1b0d] dark:text-[#8ac58a] text-[10px] font-black uppercase tracking-widest flex items-center justify-center shadow-lg">Sayur</div>
 </div>
 <div class="p-8">
-<div class="flex justify-between items-start mb-2">
-<h3 class="text-xl font-bold group-hover:text-primary transition-colors">Microgreens Mix</h3>
-</div>
-<p class="text-sm text-[#4c9a4c] mb-6 line-clamp-2">Campuran premium brokoli, lobak, dan mustard untuk garnis hidangan mewah.</p>
+<h3 class="text-xl font-bold group-hover:text-primary transition-colors">Kangkung</h3>
+<p class="text-sm text-[#4c9a4c] mb-6 line-clamp-2">Sayuran segar kualitas terbaik langsung dari kebun.</p>
 <div class="grid grid-cols-2 gap-4 pt-6 border-t border-dashed border-[#e7f3e7] dark:border-[#1a301a]">
 <div class="flex flex-col gap-1">
-<span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Status</span>
-<span class="text-xs font-bold text-[#0d1b0d] dark:text-white flex items-center gap-1">
-<span class="w-1.5 h-1.5 bg-green-500 rounded-full"></span> 100% Organic
-                                            </span>
+<span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Kategori</span>
+<span class="text-xs font-bold text-[#0d1b0d] dark:text-white">Sayur</span>
 </div>
 <div class="flex flex-col gap-1">
 <span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Shelf Life</span>
-<span class="text-xs font-bold text-[#0d1b0d] dark:text-white">5-7 Hari</span>
-</div>
-<div class="flex flex-col gap-1">
-<span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Min. Order</span>
-<span class="text-xs font-bold text-[#0d1b0d] dark:text-white">500 gram</span>
-</div>
-<div class="flex flex-col gap-1">
-<span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Packaging</span>
-<span class="text-xs font-bold text-[#0d1b0d] dark:text-white">Eco Box</span>
+<span class="text-xs font-bold text-[#0d1b0d] dark:text-white">3-5 Hari</span>
 </div>
 </div>
 </div>
 </div>
-<div class="bg-white dark:bg-background-dark rounded-3xl overflow-hidden border border-[#e7f3e7] dark:border-[#1a301a] shadow-sm hover:shadow-2xl hover:border-primary/20 transition-all group">
+<div class="bg-white dark:bg-background-dark rounded-3xl overflow-hidden border border-[#e7f3e7] dark:border-[#1a301a] shadow-sm hover:shadow-2xl hover:border-primary/20 transition-all group catalog-item" data-category="Sayur">
 <div class="h-64 relative overflow-hidden">
-<img alt="Heirloom Tomato" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDkOb9bXRygxFTWhy_5j5i3zdQ3BCGoIICiQxaQ-EM83CUAqt04Dsv_mCglytGmU-TCoRfmjZRPApdwnbD6ZW3qpFjveIZ1UBcu9gkVpAivLz67K_woNjE5-Z11eJgv6wgA8_yuoeWxBR0COCLyQraak8WvwiNq7GS3Jtwd9Lwl78jpPG3bWt0DTEMX_gkUWW_kCN9D3KNuvk_x0jjUVKnRi9EErsiLMKLVVMkLwkQZ8Tjrxn6qtwunHJcWikMjSyQ9ciYzv3XBT5lK"/>
+<img alt="Bayam Hijau" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://images.unsplash.com/photo-1576045057995-568f588f82fb?auto=format&fit=crop&w=600&q=80"/>
 <div class="absolute top-4 left-4 bg-primary text-white text-[10px] font-black uppercase tracking-widest px-3 py-1.5 rounded-full shadow-lg">Grade A</div>
+<div class="absolute top-4 right-4 bg-white/90 dark:bg-black/80 backdrop-blur-md px-3 py-1.5 rounded-xl text-[#0d1b0d] dark:text-[#8ac58a] text-[10px] font-black uppercase tracking-widest flex items-center justify-center shadow-lg">Sayur</div>
 </div>
 <div class="p-8">
-<h3 class="text-xl font-bold group-hover:text-primary transition-colors">Heirloom Tomato</h3>
-<p class="text-sm text-[#4c9a4c] mb-6 line-clamp-2">Tomat warisan dengan profil rasa manis yang kaya, sangat cocok untuk salad gourmet.</p>
+<h3 class="text-xl font-bold group-hover:text-primary transition-colors">Bayam Hijau</h3>
+<p class="text-sm text-[#4c9a4c] mb-6 line-clamp-2">Sayuran segar kualitas terbaik langsung dari kebun.</p>
 <div class="grid grid-cols-2 gap-4 pt-6 border-t border-dashed border-[#e7f3e7] dark:border-[#1a301a]">
 <div class="flex flex-col gap-1">
-<span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Status</span>
-<span class="text-xs font-bold text-[#0d1b0d] dark:text-white">Organic Status</span>
+<span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Kategori</span>
+<span class="text-xs font-bold text-[#0d1b0d] dark:text-white">Sayur</span>
 </div>
 <div class="flex flex-col gap-1">
 <span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Shelf Life</span>
-<span class="text-xs font-bold text-[#0d1b0d] dark:text-white">4-6 Hari</span>
-</div>
-<div class="flex flex-col gap-1">
-<span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Min. Order</span>
-<span class="text-xs font-bold text-[#0d1b0d] dark:text-white">5 Kilogram</span>
+<span class="text-xs font-bold text-[#0d1b0d] dark:text-white">3-5 Hari</span>
 </div>
 </div>
 </div>
 </div>
-<div class="bg-white dark:bg-background-dark rounded-3xl overflow-hidden border border-[#e7f3e7] dark:border-[#1a301a] shadow-sm hover:shadow-2xl hover:border-primary/20 transition-all group">
+
+<div class="bg-white dark:bg-background-dark rounded-3xl overflow-hidden border border-[#e7f3e7] dark:border-[#1a301a] shadow-sm hover:shadow-2xl hover:border-primary/20 transition-all group catalog-item" data-category="Sayur">
 <div class="h-64 relative overflow-hidden">
-<img alt="Baby Spinach" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6faDKsUVpL9yPmDoM_T40hEMUp6NXkmHy9QGs_cqx20zfLIeKj114rCJbeOirj1HrifD0h-3-SuVAm_ThmDXzEE4UZZeAjc2fpULW6sUFfjeLIM_DCEAac-qxKp1nux0IAh2Mm0JIApmEcvap3VGF-j_smOVJU9lMpK7S5GmyrONUXkuEd01UCMRULXCVYkvyFb-fd0YlpMr1w9jc5N2zwcagk4Lv_W5J3LVJ-HDWC2lKRWDofWwAvJ-UzC94F9cptCpuKehUfbyz"/>
+<img alt="Selada Hijau" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://images.unsplash.com/photo-1622206151226-18ca2c9ab4a1?auto=format&fit=crop&w=600&q=80"/>
 <div class="absolute top-4 left-4 bg-primary text-white text-[10px] font-black uppercase tracking-widest px-3 py-1.5 rounded-full shadow-lg">Grade A</div>
+<div class="absolute top-4 right-4 bg-white/90 dark:bg-black/80 backdrop-blur-md px-3 py-1.5 rounded-xl text-[#0d1b0d] dark:text-[#8ac58a] text-[10px] font-black uppercase tracking-widest flex items-center justify-center shadow-lg">Sayur</div>
 </div>
 <div class="p-8">
-<h3 class="text-xl font-bold group-hover:text-primary transition-colors">Baby Spinach</h3>
-<p class="text-sm text-[#4c9a4c] mb-6 line-clamp-2">Bayam muda segar yang telah dicuci 3 kali, siap digunakan untuk hidangan apapun.</p>
+<h3 class="text-xl font-bold group-hover:text-primary transition-colors">Selada Hijau</h3>
+<p class="text-sm text-[#4c9a4c] mb-6 line-clamp-2">Sayuran segar kualitas terbaik langsung dari kebun.</p>
 <div class="grid grid-cols-2 gap-4 pt-6 border-t border-dashed border-[#e7f3e7] dark:border-[#1a301a]">
 <div class="flex flex-col gap-1">
-<span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Status</span>
-<span class="text-xs font-bold text-[#0d1b0d] dark:text-white">Greenhouse</span>
+<span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Kategori</span>
+<span class="text-xs font-bold text-[#0d1b0d] dark:text-white">Sayur</span>
 </div>
 <div class="flex flex-col gap-1">
 <span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Shelf Life</span>
-<span class="text-xs font-bold text-[#0d1b0d] dark:text-white">3-4 Hari</span>
-</div>
-<div class="flex flex-col gap-1">
-<span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Min. Order</span>
-<span class="text-xs font-bold text-[#0d1b0d] dark:text-white">2 Kilogram</span>
+<span class="text-xs font-bold text-[#0d1b0d] dark:text-white">3-5 Hari</span>
 </div>
 </div>
 </div>
 </div>
-<div class="bg-white dark:bg-background-dark rounded-3xl overflow-hidden border border-[#e7f3e7] dark:border-[#1a301a] shadow-sm hover:shadow-2xl hover:border-primary/20 transition-all group">
+<div class="bg-white dark:bg-background-dark rounded-3xl overflow-hidden border border-[#e7f3e7] dark:border-[#1a301a] shadow-sm hover:shadow-2xl hover:border-primary/20 transition-all group catalog-item" data-category="Sayur">
 <div class="h-64 relative overflow-hidden">
-<img alt="Exotic Asparagus" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBWA_6daPoSkOKLAYsoIgOw1NHiFjt3Z4xzwn_R06-zfzeVgOByaac6yTxrizORmMfw0luGfKl0E5nPLRmlZOC-C0wJk59IR06avkjfCthhK3sR4VB24qhJokwb-7xPT2c3Y2w0ZKEqlvgHNdoiEFvlHKK9HDbfVHT76N3GEPfOJpazDF8mAeP-VeYDqbx89zka9zMyYfBpuZ00706xN1rwEoloN_GaqCPJ2QVcGyztuVIun3emDvN1GfWAxoxx_QNJBWUZZnmjKMwz"/>
+<img alt="Selada Merah" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="./selada_merah.png"/>
 <div class="absolute top-4 left-4 bg-primary text-white text-[10px] font-black uppercase tracking-widest px-3 py-1.5 rounded-full shadow-lg">Grade A</div>
+<div class="absolute top-4 right-4 bg-white/90 dark:bg-black/80 backdrop-blur-md px-3 py-1.5 rounded-xl text-[#0d1b0d] dark:text-[#8ac58a] text-[10px] font-black uppercase tracking-widest flex items-center justify-center shadow-lg">Sayur</div>
 </div>
 <div class="p-8">
-<h3 class="text-xl font-bold group-hover:text-primary transition-colors">Exotic Asparagus</h3>
-<p class="text-sm text-[#4c9a4c] mb-6 line-clamp-2">Asparagus hijau pilihan dengan batang renyah dan ujung lunak, kualitas ekspor.</p>
+<h3 class="text-xl font-bold group-hover:text-primary transition-colors">Selada Merah</h3>
+<p class="text-sm text-[#4c9a4c] mb-6 line-clamp-2">Sayuran segar kualitas terbaik langsung dari kebun.</p>
 <div class="grid grid-cols-2 gap-4 pt-6 border-t border-dashed border-[#e7f3e7] dark:border-[#1a301a]">
 <div class="flex flex-col gap-1">
-<span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Status</span>
-<span class="text-xs font-bold text-[#0d1b0d] dark:text-white">Premium Organic</span>
+<span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Kategori</span>
+<span class="text-xs font-bold text-[#0d1b0d] dark:text-white">Sayur</span>
 </div>
 <div class="flex flex-col gap-1">
 <span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Shelf Life</span>
-<span class="text-xs font-bold text-[#0d1b0d] dark:text-white">5-8 Hari</span>
-</div>
-<div class="flex flex-col gap-1">
-<span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Min. Order</span>
-<span class="text-xs font-bold text-[#0d1b0d] dark:text-white">1 Kilogram</span>
+<span class="text-xs font-bold text-[#0d1b0d] dark:text-white">3-5 Hari</span>
 </div>
 </div>
 </div>
 </div>
-<div class="bg-white dark:bg-background-dark rounded-3xl overflow-hidden border border-[#e7f3e7] dark:border-[#1a301a] shadow-sm hover:shadow-2xl hover:border-primary/20 transition-all group">
+<div class="bg-white dark:bg-background-dark rounded-3xl overflow-hidden border border-[#e7f3e7] dark:border-[#1a301a] shadow-sm hover:shadow-2xl hover:border-primary/20 transition-all group catalog-item" data-category="Sayur">
 <div class="h-64 relative overflow-hidden">
-<div class="w-full h-full bg-gray-100 dark:bg-[#1a301a] flex items-center justify-center">
-<span class="material-symbols-outlined text-6xl text-primary/20">grass</span>
-</div>
+<img alt="Sawi Pakchoy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="./sawi_pakchoy.png"/>
 <div class="absolute top-4 left-4 bg-primary text-white text-[10px] font-black uppercase tracking-widest px-3 py-1.5 rounded-full shadow-lg">Grade A</div>
+<div class="absolute top-4 right-4 bg-white/90 dark:bg-black/80 backdrop-blur-md px-3 py-1.5 rounded-xl text-[#0d1b0d] dark:text-[#8ac58a] text-[10px] font-black uppercase tracking-widest flex items-center justify-center shadow-lg">Sayur</div>
 </div>
 <div class="p-8">
-<h3 class="text-xl font-bold group-hover:text-primary transition-colors">Wild Arugula</h3>
-<p class="text-sm text-[#4c9a4c] mb-6 line-clamp-2">Daun arugula liar dengan rasa pedas yang khas untuk meningkatkan cita rasa salad.</p>
+<h3 class="text-xl font-bold group-hover:text-primary transition-colors">Sawi Pakchoy</h3>
+<p class="text-sm text-[#4c9a4c] mb-6 line-clamp-2">Sayuran segar kualitas terbaik langsung dari kebun.</p>
 <div class="grid grid-cols-2 gap-4 pt-6 border-t border-dashed border-[#e7f3e7] dark:border-[#1a301a]">
 <div class="flex flex-col gap-1">
-<span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Status</span>
-<span class="text-xs font-bold text-[#0d1b0d] dark:text-white">Hydroponic</span>
+<span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Kategori</span>
+<span class="text-xs font-bold text-[#0d1b0d] dark:text-white">Sayur</span>
 </div>
 <div class="flex flex-col gap-1">
 <span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Shelf Life</span>
-<span class="text-xs font-bold text-[#0d1b0d] dark:text-white">4-5 Hari</span>
-</div>
-<div class="flex flex-col gap-1">
-<span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Min. Order</span>
-<span class="text-xs font-bold text-[#0d1b0d] dark:text-white">500 gram</span>
+<span class="text-xs font-bold text-[#0d1b0d] dark:text-white">3-5 Hari</span>
 </div>
 </div>
 </div>
 </div>
-<div class="bg-white dark:bg-background-dark rounded-3xl overflow-hidden border border-[#e7f3e7] dark:border-[#1a301a] shadow-sm hover:shadow-2xl hover:border-primary/20 transition-all group">
+<div class="bg-white dark:bg-background-dark rounded-3xl overflow-hidden border border-[#e7f3e7] dark:border-[#1a301a] shadow-sm hover:shadow-2xl hover:border-primary/20 transition-all group catalog-item" data-category="Sayur">
 <div class="h-64 relative overflow-hidden">
-<div class="w-full h-full bg-gray-100 dark:bg-[#1a301a] flex items-center justify-center">
-<span class="material-symbols-outlined text-6xl text-primary/20">potted_plant</span>
-</div>
+<img alt="Sawi Caisim" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="./sawi_caisim.jpg"/>
 <div class="absolute top-4 left-4 bg-primary text-white text-[10px] font-black uppercase tracking-widest px-3 py-1.5 rounded-full shadow-lg">Grade A</div>
+<div class="absolute top-4 right-4 bg-white/90 dark:bg-black/80 backdrop-blur-md px-3 py-1.5 rounded-xl text-[#0d1b0d] dark:text-[#8ac58a] text-[10px] font-black uppercase tracking-widest flex items-center justify-center shadow-lg">Sayur</div>
 </div>
 <div class="p-8">
-<h3 class="text-xl font-bold group-hover:text-primary transition-colors">Thai Basil</h3>
-<p class="text-sm text-[#4c9a4c] mb-6 line-clamp-2">Kemangi Thailand segar dengan aroma kuat, esensial untuk masakan Asia Tenggara.</p>
+<h3 class="text-xl font-bold group-hover:text-primary transition-colors">Sawi Caisim</h3>
+<p class="text-sm text-[#4c9a4c] mb-6 line-clamp-2">Sayuran segar kualitas terbaik langsung dari kebun.</p>
 <div class="grid grid-cols-2 gap-4 pt-6 border-t border-dashed border-[#e7f3e7] dark:border-[#1a301a]">
 <div class="flex flex-col gap-1">
-<span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Status</span>
-<span class="text-xs font-bold text-[#0d1b0d] dark:text-white">Organic</span>
+<span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Kategori</span>
+<span class="text-xs font-bold text-[#0d1b0d] dark:text-white">Sayur</span>
 </div>
 <div class="flex flex-col gap-1">
 <span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Shelf Life</span>
-<span class="text-xs font-bold text-[#0d1b0d] dark:text-white">3-4 Hari</span>
+<span class="text-xs font-bold text-[#0d1b0d] dark:text-white">3-5 Hari</span>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-white dark:bg-background-dark rounded-3xl overflow-hidden border border-[#e7f3e7] dark:border-[#1a301a] shadow-sm hover:shadow-2xl hover:border-primary/20 transition-all group catalog-item" data-category="Sayur">
+<div class="h-64 relative overflow-hidden">
+<img alt="Sawi Putih" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="./sawi_putih.png"/>
+<div class="absolute top-4 left-4 bg-primary text-white text-[10px] font-black uppercase tracking-widest px-3 py-1.5 rounded-full shadow-lg">Grade A</div>
+<div class="absolute top-4 right-4 bg-white/90 dark:bg-black/80 backdrop-blur-md px-3 py-1.5 rounded-xl text-[#0d1b0d] dark:text-[#8ac58a] text-[10px] font-black uppercase tracking-widest flex items-center justify-center shadow-lg">Sayur</div>
+</div>
+<div class="p-8">
+<h3 class="text-xl font-bold group-hover:text-primary transition-colors">Sawi Putih</h3>
+<p class="text-sm text-[#4c9a4c] mb-6 line-clamp-2">Sayuran segar kualitas terbaik langsung dari kebun.</p>
+<div class="grid grid-cols-2 gap-4 pt-6 border-t border-dashed border-[#e7f3e7] dark:border-[#1a301a]">
+<div class="flex flex-col gap-1">
+<span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Kategori</span>
+<span class="text-xs font-bold text-[#0d1b0d] dark:text-white">Sayur</span>
 </div>
 <div class="flex flex-col gap-1">
-<span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Min. Order</span>
-<span class="text-xs font-bold text-[#0d1b0d] dark:text-white">1 Kilogram</span>
+<span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Shelf Life</span>
+<span class="text-xs font-bold text-[#0d1b0d] dark:text-white">3-5 Hari</span>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-white dark:bg-background-dark rounded-3xl overflow-hidden border border-[#e7f3e7] dark:border-[#1a301a] shadow-sm hover:shadow-2xl hover:border-primary/20 transition-all group catalog-item" data-category="Sayur">
+<div class="h-64 relative overflow-hidden">
+<img alt="Kemangi" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="./kemangi.png"/>
+<div class="absolute top-4 left-4 bg-primary text-white text-[10px] font-black uppercase tracking-widest px-3 py-1.5 rounded-full shadow-lg">Grade A</div>
+<div class="absolute top-4 right-4 bg-white/90 dark:bg-black/80 backdrop-blur-md px-3 py-1.5 rounded-xl text-[#0d1b0d] dark:text-[#8ac58a] text-[10px] font-black uppercase tracking-widest flex items-center justify-center shadow-lg">Sayur</div>
+</div>
+<div class="p-8">
+<h3 class="text-xl font-bold group-hover:text-primary transition-colors">Kemangi</h3>
+<p class="text-sm text-[#4c9a4c] mb-6 line-clamp-2">Sayuran segar kualitas terbaik langsung dari kebun.</p>
+<div class="grid grid-cols-2 gap-4 pt-6 border-t border-dashed border-[#e7f3e7] dark:border-[#1a301a]">
+<div class="flex flex-col gap-1">
+<span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Kategori</span>
+<span class="text-xs font-bold text-[#0d1b0d] dark:text-white">Sayur</span>
+</div>
+<div class="flex flex-col gap-1">
+<span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Shelf Life</span>
+<span class="text-xs font-bold text-[#0d1b0d] dark:text-white">3-5 Hari</span>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-white dark:bg-background-dark rounded-3xl overflow-hidden border border-[#e7f3e7] dark:border-[#1a301a] shadow-sm hover:shadow-2xl hover:border-primary/20 transition-all group catalog-item" data-category="Sayur">
+<div class="h-64 relative overflow-hidden">
+<img alt="Seledri" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="./seledri.png"/>
+<div class="absolute top-4 left-4 bg-primary text-white text-[10px] font-black uppercase tracking-widest px-3 py-1.5 rounded-full shadow-lg">Grade A</div>
+<div class="absolute top-4 right-4 bg-white/90 dark:bg-black/80 backdrop-blur-md px-3 py-1.5 rounded-xl text-[#0d1b0d] dark:text-[#8ac58a] text-[10px] font-black uppercase tracking-widest flex items-center justify-center shadow-lg">Sayur</div>
+</div>
+<div class="p-8">
+<h3 class="text-xl font-bold group-hover:text-primary transition-colors">Seledri</h3>
+<p class="text-sm text-[#4c9a4c] mb-6 line-clamp-2">Sayuran segar kualitas terbaik langsung dari kebun.</p>
+<div class="grid grid-cols-2 gap-4 pt-6 border-t border-dashed border-[#e7f3e7] dark:border-[#1a301a]">
+<div class="flex flex-col gap-1">
+<span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Kategori</span>
+<span class="text-xs font-bold text-[#0d1b0d] dark:text-white">Sayur</span>
+</div>
+<div class="flex flex-col gap-1">
+<span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Shelf Life</span>
+<span class="text-xs font-bold text-[#0d1b0d] dark:text-white">3-5 Hari</span>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-white dark:bg-background-dark rounded-3xl overflow-hidden border border-[#e7f3e7] dark:border-[#1a301a] shadow-sm hover:shadow-2xl hover:border-primary/20 transition-all group catalog-item" data-category="Sayur">
+<div class="h-64 relative overflow-hidden">
+<img alt="Daun Bawang" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="./daun_bawang.png"/>
+<div class="absolute top-4 left-4 bg-primary text-white text-[10px] font-black uppercase tracking-widest px-3 py-1.5 rounded-full shadow-lg">Grade A</div>
+<div class="absolute top-4 right-4 bg-white/90 dark:bg-black/80 backdrop-blur-md px-3 py-1.5 rounded-xl text-[#0d1b0d] dark:text-[#8ac58a] text-[10px] font-black uppercase tracking-widest flex items-center justify-center shadow-lg">Sayur</div>
+</div>
+<div class="p-8">
+<h3 class="text-xl font-bold group-hover:text-primary transition-colors">Daun Bawang</h3>
+<p class="text-sm text-[#4c9a4c] mb-6 line-clamp-2">Sayuran segar kualitas terbaik langsung dari kebun.</p>
+<div class="grid grid-cols-2 gap-4 pt-6 border-t border-dashed border-[#e7f3e7] dark:border-[#1a301a]">
+<div class="flex flex-col gap-1">
+<span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Kategori</span>
+<span class="text-xs font-bold text-[#0d1b0d] dark:text-white">Sayur</span>
+</div>
+<div class="flex flex-col gap-1">
+<span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Shelf Life</span>
+<span class="text-xs font-bold text-[#0d1b0d] dark:text-white">3-5 Hari</span>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-white dark:bg-background-dark rounded-3xl overflow-hidden border border-[#e7f3e7] dark:border-[#1a301a] shadow-sm hover:shadow-2xl hover:border-primary/20 transition-all group catalog-item" data-category="Sayur">
+<div class="h-64 relative overflow-hidden">
+<img alt="Kubis" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="./kubis.png"/>
+<div class="absolute top-4 left-4 bg-primary text-white text-[10px] font-black uppercase tracking-widest px-3 py-1.5 rounded-full shadow-lg">Grade A</div>
+<div class="absolute top-4 right-4 bg-white/90 dark:bg-black/80 backdrop-blur-md px-3 py-1.5 rounded-xl text-[#0d1b0d] dark:text-[#8ac58a] text-[10px] font-black uppercase tracking-widest flex items-center justify-center shadow-lg">Sayur</div>
+</div>
+<div class="p-8">
+<h3 class="text-xl font-bold group-hover:text-primary transition-colors">Kubis</h3>
+<p class="text-sm text-[#4c9a4c] mb-6 line-clamp-2">Sayuran segar kualitas terbaik langsung dari kebun.</p>
+<div class="grid grid-cols-2 gap-4 pt-6 border-t border-dashed border-[#e7f3e7] dark:border-[#1a301a]">
+<div class="flex flex-col gap-1">
+<span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Kategori</span>
+<span class="text-xs font-bold text-[#0d1b0d] dark:text-white">Sayur</span>
+</div>
+<div class="flex flex-col gap-1">
+<span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Shelf Life</span>
+<span class="text-xs font-bold text-[#0d1b0d] dark:text-white">3-5 Hari</span>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-white dark:bg-background-dark rounded-3xl overflow-hidden border border-[#e7f3e7] dark:border-[#1a301a] shadow-sm hover:shadow-2xl hover:border-primary/20 transition-all group catalog-item" data-category="Sayur">
+<div class="h-64 relative overflow-hidden">
+<img alt="Kembang Kol" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://images.unsplash.com/photo-1568584711075-3d021a7c3ca3?auto=format&fit=crop&w=600&q=80"/>
+<div class="absolute top-4 left-4 bg-primary text-white text-[10px] font-black uppercase tracking-widest px-3 py-1.5 rounded-full shadow-lg">Grade A</div>
+<div class="absolute top-4 right-4 bg-white/90 dark:bg-black/80 backdrop-blur-md px-3 py-1.5 rounded-xl text-[#0d1b0d] dark:text-[#8ac58a] text-[10px] font-black uppercase tracking-widest flex items-center justify-center shadow-lg">Sayur</div>
+</div>
+<div class="p-8">
+<h3 class="text-xl font-bold group-hover:text-primary transition-colors">Kembang Kol</h3>
+<p class="text-sm text-[#4c9a4c] mb-6 line-clamp-2">Sayuran segar kualitas terbaik langsung dari kebun.</p>
+<div class="grid grid-cols-2 gap-4 pt-6 border-t border-dashed border-[#e7f3e7] dark:border-[#1a301a]">
+<div class="flex flex-col gap-1">
+<span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Kategori</span>
+<span class="text-xs font-bold text-[#0d1b0d] dark:text-white">Sayur</span>
+</div>
+<div class="flex flex-col gap-1">
+<span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Shelf Life</span>
+<span class="text-xs font-bold text-[#0d1b0d] dark:text-white">3-5 Hari</span>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-white dark:bg-background-dark rounded-3xl overflow-hidden border border-[#e7f3e7] dark:border-[#1a301a] shadow-sm hover:shadow-2xl hover:border-primary/20 transition-all group catalog-item" data-category="Buah">
+<div class="h-64 relative overflow-hidden">
+<img alt="Cabe Rawit" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://images.unsplash.com/photo-1588012678665-27a93ce14f24?auto=format&fit=crop&w=600&q=80"/>
+<div class="absolute top-4 left-4 bg-primary text-white text-[10px] font-black uppercase tracking-widest px-3 py-1.5 rounded-full shadow-lg">Grade A</div>
+<div class="absolute top-4 right-4 bg-white/90 dark:bg-black/80 backdrop-blur-md px-3 py-1.5 rounded-xl text-[#0d1b0d] dark:text-[#8ac58a] text-[10px] font-black uppercase tracking-widest flex items-center justify-center shadow-lg">Buah</div>
+</div>
+<div class="p-8">
+<h3 class="text-xl font-bold group-hover:text-primary transition-colors">Cabe Rawit</h3>
+<p class="text-sm text-[#4c9a4c] mb-6 line-clamp-2">Sayuran segar kualitas terbaik langsung dari kebun.</p>
+<div class="grid grid-cols-2 gap-4 pt-6 border-t border-dashed border-[#e7f3e7] dark:border-[#1a301a]">
+<div class="flex flex-col gap-1">
+<span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Kategori</span>
+<span class="text-xs font-bold text-[#0d1b0d] dark:text-white">Buah</span>
+</div>
+<div class="flex flex-col gap-1">
+<span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Shelf Life</span>
+<span class="text-xs font-bold text-[#0d1b0d] dark:text-white">3-5 Hari</span>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-white dark:bg-background-dark rounded-3xl overflow-hidden border border-[#e7f3e7] dark:border-[#1a301a] shadow-sm hover:shadow-2xl hover:border-primary/20 transition-all group catalog-item" data-category="Buah">
+<div class="h-64 relative overflow-hidden">
+<img alt="Cabe Keriting" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://images.unsplash.com/photo-1588012678665-27a93ce14f24?auto=format&fit=crop&w=600&q=80"/>
+<div class="absolute top-4 left-4 bg-primary text-white text-[10px] font-black uppercase tracking-widest px-3 py-1.5 rounded-full shadow-lg">Grade A</div>
+<div class="absolute top-4 right-4 bg-white/90 dark:bg-black/80 backdrop-blur-md px-3 py-1.5 rounded-xl text-[#0d1b0d] dark:text-[#8ac58a] text-[10px] font-black uppercase tracking-widest flex items-center justify-center shadow-lg">Buah</div>
+</div>
+<div class="p-8">
+<h3 class="text-xl font-bold group-hover:text-primary transition-colors">Cabe Keriting</h3>
+<p class="text-sm text-[#4c9a4c] mb-6 line-clamp-2">Sayuran segar kualitas terbaik langsung dari kebun.</p>
+<div class="grid grid-cols-2 gap-4 pt-6 border-t border-dashed border-[#e7f3e7] dark:border-[#1a301a]">
+<div class="flex flex-col gap-1">
+<span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Kategori</span>
+<span class="text-xs font-bold text-[#0d1b0d] dark:text-white">Buah</span>
+</div>
+<div class="flex flex-col gap-1">
+<span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Shelf Life</span>
+<span class="text-xs font-bold text-[#0d1b0d] dark:text-white">3-5 Hari</span>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-white dark:bg-background-dark rounded-3xl overflow-hidden border border-[#e7f3e7] dark:border-[#1a301a] shadow-sm hover:shadow-2xl hover:border-primary/20 transition-all group catalog-item" data-category="Buah">
+<div class="h-64 relative overflow-hidden">
+<img alt="Cabe Besar" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://images.unsplash.com/photo-1588012678665-27a93ce14f24?auto=format&fit=crop&w=600&q=80"/>
+<div class="absolute top-4 left-4 bg-primary text-white text-[10px] font-black uppercase tracking-widest px-3 py-1.5 rounded-full shadow-lg">Grade A</div>
+<div class="absolute top-4 right-4 bg-white/90 dark:bg-black/80 backdrop-blur-md px-3 py-1.5 rounded-xl text-[#0d1b0d] dark:text-[#8ac58a] text-[10px] font-black uppercase tracking-widest flex items-center justify-center shadow-lg">Buah</div>
+</div>
+<div class="p-8">
+<h3 class="text-xl font-bold group-hover:text-primary transition-colors">Cabe Besar</h3>
+<p class="text-sm text-[#4c9a4c] mb-6 line-clamp-2">Sayuran segar kualitas terbaik langsung dari kebun.</p>
+<div class="grid grid-cols-2 gap-4 pt-6 border-t border-dashed border-[#e7f3e7] dark:border-[#1a301a]">
+<div class="flex flex-col gap-1">
+<span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Kategori</span>
+<span class="text-xs font-bold text-[#0d1b0d] dark:text-white">Buah</span>
+</div>
+<div class="flex flex-col gap-1">
+<span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Shelf Life</span>
+<span class="text-xs font-bold text-[#0d1b0d] dark:text-white">3-5 Hari</span>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-white dark:bg-background-dark rounded-3xl overflow-hidden border border-[#e7f3e7] dark:border-[#1a301a] shadow-sm hover:shadow-2xl hover:border-primary/20 transition-all group catalog-item" data-category="Buah">
+<div class="h-64 relative overflow-hidden">
+<img alt="Tomat Besar" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://images.unsplash.com/photo-1592924357228-91a4daadcfea?auto=format&fit=crop&w=600&q=80"/>
+<div class="absolute top-4 left-4 bg-primary text-white text-[10px] font-black uppercase tracking-widest px-3 py-1.5 rounded-full shadow-lg">Grade A</div>
+<div class="absolute top-4 right-4 bg-white/90 dark:bg-black/80 backdrop-blur-md px-3 py-1.5 rounded-xl text-[#0d1b0d] dark:text-[#8ac58a] text-[10px] font-black uppercase tracking-widest flex items-center justify-center shadow-lg">Buah</div>
+</div>
+<div class="p-8">
+<h3 class="text-xl font-bold group-hover:text-primary transition-colors">Tomat Besar</h3>
+<p class="text-sm text-[#4c9a4c] mb-6 line-clamp-2">Sayuran segar kualitas terbaik langsung dari kebun.</p>
+<div class="grid grid-cols-2 gap-4 pt-6 border-t border-dashed border-[#e7f3e7] dark:border-[#1a301a]">
+<div class="flex flex-col gap-1">
+<span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Kategori</span>
+<span class="text-xs font-bold text-[#0d1b0d] dark:text-white">Buah</span>
+</div>
+<div class="flex flex-col gap-1">
+<span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Shelf Life</span>
+<span class="text-xs font-bold text-[#0d1b0d] dark:text-white">3-5 Hari</span>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-white dark:bg-background-dark rounded-3xl overflow-hidden border border-[#e7f3e7] dark:border-[#1a301a] shadow-sm hover:shadow-2xl hover:border-primary/20 transition-all group catalog-item" data-category="Buah">
+<div class="h-64 relative overflow-hidden">
+<img alt="Tomat Cherry" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://images.unsplash.com/photo-1592924357228-91a4daadcfea?auto=format&fit=crop&w=600&q=80"/>
+<div class="absolute top-4 left-4 bg-primary text-white text-[10px] font-black uppercase tracking-widest px-3 py-1.5 rounded-full shadow-lg">Grade A</div>
+<div class="absolute top-4 right-4 bg-white/90 dark:bg-black/80 backdrop-blur-md px-3 py-1.5 rounded-xl text-[#0d1b0d] dark:text-[#8ac58a] text-[10px] font-black uppercase tracking-widest flex items-center justify-center shadow-lg">Buah</div>
+</div>
+<div class="p-8">
+<h3 class="text-xl font-bold group-hover:text-primary transition-colors">Tomat Cherry</h3>
+<p class="text-sm text-[#4c9a4c] mb-6 line-clamp-2">Sayuran segar kualitas terbaik langsung dari kebun.</p>
+<div class="grid grid-cols-2 gap-4 pt-6 border-t border-dashed border-[#e7f3e7] dark:border-[#1a301a]">
+<div class="flex flex-col gap-1">
+<span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Kategori</span>
+<span class="text-xs font-bold text-[#0d1b0d] dark:text-white">Buah</span>
+</div>
+<div class="flex flex-col gap-1">
+<span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Shelf Life</span>
+<span class="text-xs font-bold text-[#0d1b0d] dark:text-white">3-5 Hari</span>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-white dark:bg-background-dark rounded-3xl overflow-hidden border border-[#e7f3e7] dark:border-[#1a301a] shadow-sm hover:shadow-2xl hover:border-primary/20 transition-all group catalog-item" data-category="Buah">
+<div class="h-64 relative overflow-hidden">
+<img alt="Tomat Mawar" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://images.unsplash.com/photo-1592924357228-91a4daadcfea?auto=format&fit=crop&w=600&q=80"/>
+<div class="absolute top-4 left-4 bg-primary text-white text-[10px] font-black uppercase tracking-widest px-3 py-1.5 rounded-full shadow-lg">Grade A</div>
+<div class="absolute top-4 right-4 bg-white/90 dark:bg-black/80 backdrop-blur-md px-3 py-1.5 rounded-xl text-[#0d1b0d] dark:text-[#8ac58a] text-[10px] font-black uppercase tracking-widest flex items-center justify-center shadow-lg">Buah</div>
+</div>
+<div class="p-8">
+<h3 class="text-xl font-bold group-hover:text-primary transition-colors">Tomat Mawar</h3>
+<p class="text-sm text-[#4c9a4c] mb-6 line-clamp-2">Sayuran segar kualitas terbaik langsung dari kebun.</p>
+<div class="grid grid-cols-2 gap-4 pt-6 border-t border-dashed border-[#e7f3e7] dark:border-[#1a301a]">
+<div class="flex flex-col gap-1">
+<span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Kategori</span>
+<span class="text-xs font-bold text-[#0d1b0d] dark:text-white">Buah</span>
+</div>
+<div class="flex flex-col gap-1">
+<span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Shelf Life</span>
+<span class="text-xs font-bold text-[#0d1b0d] dark:text-white">3-5 Hari</span>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-white dark:bg-background-dark rounded-3xl overflow-hidden border border-[#e7f3e7] dark:border-[#1a301a] shadow-sm hover:shadow-2xl hover:border-primary/20 transition-all group catalog-item" data-category="Umbi">
+<div class="h-64 relative overflow-hidden">
+<img alt="Wortel" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://images.unsplash.com/photo-1598170845058-32b9d6a5da37?auto=format&fit=crop&w=600&q=80"/>
+<div class="absolute top-4 left-4 bg-primary text-white text-[10px] font-black uppercase tracking-widest px-3 py-1.5 rounded-full shadow-lg">Grade A</div>
+<div class="absolute top-4 right-4 bg-white/90 dark:bg-black/80 backdrop-blur-md px-3 py-1.5 rounded-xl text-[#0d1b0d] dark:text-[#8ac58a] text-[10px] font-black uppercase tracking-widest flex items-center justify-center shadow-lg">Umbi</div>
+</div>
+<div class="p-8">
+<h3 class="text-xl font-bold group-hover:text-primary transition-colors">Wortel</h3>
+<p class="text-sm text-[#4c9a4c] mb-6 line-clamp-2">Sayuran segar kualitas terbaik langsung dari kebun.</p>
+<div class="grid grid-cols-2 gap-4 pt-6 border-t border-dashed border-[#e7f3e7] dark:border-[#1a301a]">
+<div class="flex flex-col gap-1">
+<span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Kategori</span>
+<span class="text-xs font-bold text-[#0d1b0d] dark:text-white">Umbi</span>
+</div>
+<div class="flex flex-col gap-1">
+<span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Shelf Life</span>
+<span class="text-xs font-bold text-[#0d1b0d] dark:text-white">3-5 Hari</span>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-white dark:bg-background-dark rounded-3xl overflow-hidden border border-[#e7f3e7] dark:border-[#1a301a] shadow-sm hover:shadow-2xl hover:border-primary/20 transition-all group catalog-item" data-category="Buah">
+<div class="h-64 relative overflow-hidden">
+<img alt="Terong Hijau" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://images.unsplash.com/photo-1615485925600-97237072fea8?auto=format&fit=crop&w=600&q=80"/>
+<div class="absolute top-4 left-4 bg-primary text-white text-[10px] font-black uppercase tracking-widest px-3 py-1.5 rounded-full shadow-lg">Grade A</div>
+<div class="absolute top-4 right-4 bg-white/90 dark:bg-black/80 backdrop-blur-md px-3 py-1.5 rounded-xl text-[#0d1b0d] dark:text-[#8ac58a] text-[10px] font-black uppercase tracking-widest flex items-center justify-center shadow-lg">Buah</div>
+</div>
+<div class="p-8">
+<h3 class="text-xl font-bold group-hover:text-primary transition-colors">Terong Hijau</h3>
+<p class="text-sm text-[#4c9a4c] mb-6 line-clamp-2">Sayuran segar kualitas terbaik langsung dari kebun.</p>
+<div class="grid grid-cols-2 gap-4 pt-6 border-t border-dashed border-[#e7f3e7] dark:border-[#1a301a]">
+<div class="flex flex-col gap-1">
+<span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Kategori</span>
+<span class="text-xs font-bold text-[#0d1b0d] dark:text-white">Buah</span>
+</div>
+<div class="flex flex-col gap-1">
+<span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Shelf Life</span>
+<span class="text-xs font-bold text-[#0d1b0d] dark:text-white">3-5 Hari</span>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-white dark:bg-background-dark rounded-3xl overflow-hidden border border-[#e7f3e7] dark:border-[#1a301a] shadow-sm hover:shadow-2xl hover:border-primary/20 transition-all group catalog-item" data-category="Buah">
+<div class="h-64 relative overflow-hidden">
+<img alt="Terong Ungu" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://images.unsplash.com/photo-1615485925600-97237072fea8?auto=format&fit=crop&w=600&q=80"/>
+<div class="absolute top-4 left-4 bg-primary text-white text-[10px] font-black uppercase tracking-widest px-3 py-1.5 rounded-full shadow-lg">Grade A</div>
+<div class="absolute top-4 right-4 bg-white/90 dark:bg-black/80 backdrop-blur-md px-3 py-1.5 rounded-xl text-[#0d1b0d] dark:text-[#8ac58a] text-[10px] font-black uppercase tracking-widest flex items-center justify-center shadow-lg">Buah</div>
+</div>
+<div class="p-8">
+<h3 class="text-xl font-bold group-hover:text-primary transition-colors">Terong Ungu</h3>
+<p class="text-sm text-[#4c9a4c] mb-6 line-clamp-2">Sayuran segar kualitas terbaik langsung dari kebun.</p>
+<div class="grid grid-cols-2 gap-4 pt-6 border-t border-dashed border-[#e7f3e7] dark:border-[#1a301a]">
+<div class="flex flex-col gap-1">
+<span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Kategori</span>
+<span class="text-xs font-bold text-[#0d1b0d] dark:text-white">Buah</span>
+</div>
+<div class="flex flex-col gap-1">
+<span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Shelf Life</span>
+<span class="text-xs font-bold text-[#0d1b0d] dark:text-white">3-5 Hari</span>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-white dark:bg-background-dark rounded-3xl overflow-hidden border border-[#e7f3e7] dark:border-[#1a301a] shadow-sm hover:shadow-2xl hover:border-primary/20 transition-all group catalog-item" data-category="Buah">
+<div class="h-64 relative overflow-hidden">
+<img alt="Terong Lalap" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://images.unsplash.com/photo-1615485925600-97237072fea8?auto=format&fit=crop&w=600&q=80"/>
+<div class="absolute top-4 left-4 bg-primary text-white text-[10px] font-black uppercase tracking-widest px-3 py-1.5 rounded-full shadow-lg">Grade A</div>
+<div class="absolute top-4 right-4 bg-white/90 dark:bg-black/80 backdrop-blur-md px-3 py-1.5 rounded-xl text-[#0d1b0d] dark:text-[#8ac58a] text-[10px] font-black uppercase tracking-widest flex items-center justify-center shadow-lg">Buah</div>
+</div>
+<div class="p-8">
+<h3 class="text-xl font-bold group-hover:text-primary transition-colors">Terong Lalap</h3>
+<p class="text-sm text-[#4c9a4c] mb-6 line-clamp-2">Sayuran segar kualitas terbaik langsung dari kebun.</p>
+<div class="grid grid-cols-2 gap-4 pt-6 border-t border-dashed border-[#e7f3e7] dark:border-[#1a301a]">
+<div class="flex flex-col gap-1">
+<span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Kategori</span>
+<span class="text-xs font-bold text-[#0d1b0d] dark:text-white">Buah</span>
+</div>
+<div class="flex flex-col gap-1">
+<span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Shelf Life</span>
+<span class="text-xs font-bold text-[#0d1b0d] dark:text-white">3-5 Hari</span>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-white dark:bg-background-dark rounded-3xl overflow-hidden border border-[#e7f3e7] dark:border-[#1a301a] shadow-sm hover:shadow-2xl hover:border-primary/20 transition-all group catalog-item" data-category="Sayur">
+<div class="h-64 relative overflow-hidden">
+<img alt="Buncis" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://images.unsplash.com/photo-1533116817105-04b3ae612144?auto=format&fit=crop&w=600&q=80"/>
+<div class="absolute top-4 left-4 bg-primary text-white text-[10px] font-black uppercase tracking-widest px-3 py-1.5 rounded-full shadow-lg">Grade A</div>
+<div class="absolute top-4 right-4 bg-white/90 dark:bg-black/80 backdrop-blur-md px-3 py-1.5 rounded-xl text-[#0d1b0d] dark:text-[#8ac58a] text-[10px] font-black uppercase tracking-widest flex items-center justify-center shadow-lg">Sayur</div>
+</div>
+<div class="p-8">
+<h3 class="text-xl font-bold group-hover:text-primary transition-colors">Buncis</h3>
+<p class="text-sm text-[#4c9a4c] mb-6 line-clamp-2">Sayuran segar kualitas terbaik langsung dari kebun.</p>
+<div class="grid grid-cols-2 gap-4 pt-6 border-t border-dashed border-[#e7f3e7] dark:border-[#1a301a]">
+<div class="flex flex-col gap-1">
+<span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Kategori</span>
+<span class="text-xs font-bold text-[#0d1b0d] dark:text-white">Sayur</span>
+</div>
+<div class="flex flex-col gap-1">
+<span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Shelf Life</span>
+<span class="text-xs font-bold text-[#0d1b0d] dark:text-white">3-5 Hari</span>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-white dark:bg-background-dark rounded-3xl overflow-hidden border border-[#e7f3e7] dark:border-[#1a301a] shadow-sm hover:shadow-2xl hover:border-primary/20 transition-all group catalog-item" data-category="Sayur">
+<div class="h-64 relative overflow-hidden">
+<img alt="Pare" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://images.unsplash.com/photo-1601648764658-cf37e8c89b70?auto=format&fit=crop&w=600&q=80"/>
+<div class="absolute top-4 left-4 bg-primary text-white text-[10px] font-black uppercase tracking-widest px-3 py-1.5 rounded-full shadow-lg">Grade A</div>
+<div class="absolute top-4 right-4 bg-white/90 dark:bg-black/80 backdrop-blur-md px-3 py-1.5 rounded-xl text-[#0d1b0d] dark:text-[#8ac58a] text-[10px] font-black uppercase tracking-widest flex items-center justify-center shadow-lg">Sayur</div>
+</div>
+<div class="p-8">
+<h3 class="text-xl font-bold group-hover:text-primary transition-colors">Pare</h3>
+<p class="text-sm text-[#4c9a4c] mb-6 line-clamp-2">Sayuran segar kualitas terbaik langsung dari kebun.</p>
+<div class="grid grid-cols-2 gap-4 pt-6 border-t border-dashed border-[#e7f3e7] dark:border-[#1a301a]">
+<div class="flex flex-col gap-1">
+<span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Kategori</span>
+<span class="text-xs font-bold text-[#0d1b0d] dark:text-white">Sayur</span>
+</div>
+<div class="flex flex-col gap-1">
+<span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Shelf Life</span>
+<span class="text-xs font-bold text-[#0d1b0d] dark:text-white">3-5 Hari</span>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-white dark:bg-background-dark rounded-3xl overflow-hidden border border-[#e7f3e7] dark:border-[#1a301a] shadow-sm hover:shadow-2xl hover:border-primary/20 transition-all group catalog-item" data-category="Buah">
+<div class="h-64 relative overflow-hidden">
+<img alt="Timun" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://images.unsplash.com/photo-1604977042946-1eecc30fdb7c?auto=format&fit=crop&w=600&q=80"/>
+<div class="absolute top-4 left-4 bg-primary text-white text-[10px] font-black uppercase tracking-widest px-3 py-1.5 rounded-full shadow-lg">Grade A</div>
+<div class="absolute top-4 right-4 bg-white/90 dark:bg-black/80 backdrop-blur-md px-3 py-1.5 rounded-xl text-[#0d1b0d] dark:text-[#8ac58a] text-[10px] font-black uppercase tracking-widest flex items-center justify-center shadow-lg">Buah</div>
+</div>
+<div class="p-8">
+<h3 class="text-xl font-bold group-hover:text-primary transition-colors">Timun</h3>
+<p class="text-sm text-[#4c9a4c] mb-6 line-clamp-2">Sayuran segar kualitas terbaik langsung dari kebun.</p>
+<div class="grid grid-cols-2 gap-4 pt-6 border-t border-dashed border-[#e7f3e7] dark:border-[#1a301a]">
+<div class="flex flex-col gap-1">
+<span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Kategori</span>
+<span class="text-xs font-bold text-[#0d1b0d] dark:text-white">Buah</span>
+</div>
+<div class="flex flex-col gap-1">
+<span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Shelf Life</span>
+<span class="text-xs font-bold text-[#0d1b0d] dark:text-white">3-5 Hari</span>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-white dark:bg-background-dark rounded-3xl overflow-hidden border border-[#e7f3e7] dark:border-[#1a301a] shadow-sm hover:shadow-2xl hover:border-primary/20 transition-all group catalog-item" data-category="Sayur">
+<div class="h-64 relative overflow-hidden">
+<img alt="Kacang Panjang" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://images.unsplash.com/photo-1533116817105-04b3ae612144?auto=format&fit=crop&w=600&q=80"/>
+<div class="absolute top-4 left-4 bg-primary text-white text-[10px] font-black uppercase tracking-widest px-3 py-1.5 rounded-full shadow-lg">Grade A</div>
+<div class="absolute top-4 right-4 bg-white/90 dark:bg-black/80 backdrop-blur-md px-3 py-1.5 rounded-xl text-[#0d1b0d] dark:text-[#8ac58a] text-[10px] font-black uppercase tracking-widest flex items-center justify-center shadow-lg">Sayur</div>
+</div>
+<div class="p-8">
+<h3 class="text-xl font-bold group-hover:text-primary transition-colors">Kacang Panjang</h3>
+<p class="text-sm text-[#4c9a4c] mb-6 line-clamp-2">Sayuran segar kualitas terbaik langsung dari kebun.</p>
+<div class="grid grid-cols-2 gap-4 pt-6 border-t border-dashed border-[#e7f3e7] dark:border-[#1a301a]">
+<div class="flex flex-col gap-1">
+<span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Kategori</span>
+<span class="text-xs font-bold text-[#0d1b0d] dark:text-white">Sayur</span>
+</div>
+<div class="flex flex-col gap-1">
+<span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Shelf Life</span>
+<span class="text-xs font-bold text-[#0d1b0d] dark:text-white">3-5 Hari</span>
 </div>
 </div>
 </div>
@@ -374,10 +754,9 @@
 <div>
 <h4 class="font-bold mb-6 text-[#0d1b0d] dark:text-white">Produk</h4>
 <ul class="flex flex-col gap-4 text-sm font-medium opacity-70">
-<li><a class="hover:text-primary transition-colors" href="#">Microgreens</a></li>
-<li><a class="hover:text-primary transition-colors" href="#">Heirloom</a></li>
-<li><a class="hover:text-primary transition-colors" href="#">Leafy Greens</a></li>
-<li><a class="hover:text-primary transition-colors" href="#">Roots</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Sayur</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Buah</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Umbi</a></li>
 </ul>
 </div>
 <div>
@@ -407,5 +786,44 @@
 </div>
 </footer>
 </div>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const filterButtons = document.querySelectorAll('button[data-filter]');
+            const catalogItems = document.querySelectorAll('.catalog-item');
+            
+            filterButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const filterValue = button.getAttribute('data-filter');
+                    
+                    filterButtons.forEach(btn => {
+                        btn.classList.remove('bg-primary', 'text-white');
+                        btn.classList.add('hover:bg-white', 'dark:hover:bg-[#1a301a]', 'text-[#4c9a4c]', 'dark:text-[#8ac58a]');
+                        const span = btn.querySelector('span');
+                        if(span) {
+                            if(btn === button) {
+                                span.classList.remove('opacity-50');
+                                span.className = 'text-xs bg-white/20 px-2 py-1 rounded-md';
+                            } else {
+                                span.className = 'text-xs opacity-50';
+                            }
+                        }
+                    });
+                    
+                    button.classList.remove('hover:bg-white', 'dark:hover:bg-[#1a301a]', 'text-[#4c9a4c]', 'dark:text-[#8ac58a]');
+                    button.classList.add('bg-primary', 'text-white');
+                    
+                    catalogItems.forEach(item => {
+                        if (filterValue === 'Semua' || item.getAttribute('data-category') === filterValue) {
+                            item.style.display = 'block';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+    </script>
 
 </body></html>
